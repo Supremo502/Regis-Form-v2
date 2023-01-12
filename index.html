@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet">
+    <title>Simple Form v2</title>
+  </head>
+  <body>
+    <!--English version-->
+    <!--Registration form v2 - Rony C -->
+    <h1>Registration Form</h1>
+    <p></p>
+    <a href="action.html" target="_blank"></a> 
+    <form method="post" action="action.html">
+      <fieldset>
+        <label  for="First-name">Enter your first name:<input class="s" required id="f-name" name="first-name" type="text"></label>
+      </fieldset>
+
+      <fieldset>
+        <label  for="middle-name">Enter your middle name:<input class="s" id="m-name" name="middle-name" type="text" placeholder="opcional"></label>
+      </fieldset>
+
+      <fieldset>
+        <label  for="last-name">Enter your last name:<input class="s" id="l-name" name="last-name" type="text" placeholder="" required></label>
+      </fieldset>
+
+      <fieldset>
+        <label  for="email">Enter your email:<input class="s" id="email-user" name="email" type="email" placeholder="" required></label>
+      </fieldset>
+      <fieldset>
+        <label  for="password">Create a new password:<input class="s" d="password" name="password" pattern="[a-z0-5]{8,}" type="password" placeholder="" required></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="terms-conditions"><input id="terms-and-conditions" name="terms-and-conditions" class="terms" required  type="checkbox" >I accept the <a href="">Terms and conditions</a></label>
+      </fieldset>
+      <input class="btn" type="submit" value="submit"/>
+    </form>
+  </body>
+</html>
